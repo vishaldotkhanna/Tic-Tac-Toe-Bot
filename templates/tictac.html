@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Challenge!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ static_url('tictac.css') }}">
+    <script src="{{ static_url('tictac.js') }}"></script>
+</head>
+<body>
+    <div id="wrapper" class="container">
+        <h1 class="text-center">Challenge the AI bot!</h1>
+        <div id="tictac">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <table id="tictac_board">
+                        <tr class="text-center">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="display_messages">
+                <div class="col-md-2"></div>
+                <div class="col-md-2" id="human"></div>
+                <div class="col-md-4">
+                    <img id="loading" src="{{ static_url('reload.gif') }}">
+                    <div id="status_message"></div>
+                </div>
+                <div class="col-md-2" id="ai"></div>
+                <div class="col-md-2"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

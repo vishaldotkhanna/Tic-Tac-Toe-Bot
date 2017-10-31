@@ -1,0 +1,50 @@
+#tictac_board
+{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+}
+
+#tictac_board tr:not(:last-child)
+{
+    border-bottom: 4px solid black;
+}
+
+#tictac_board td:not(:last-child)
+{
+    border-right: 4px solid black;
+}
+
+#tictac_board tr
+{
+
+}
+
+#tictac_board td
+{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    color: black;
+}
+
+#display_messages
+{
+    margin-top: 7%;
+    font-size: 30px;
+    text-align: center;
+}
+
+#human, #ai    {
+    opacity: 0.8;
+}
+
+#human:hover, #ai:hover    {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#loading    {
+    display: none;
+}
